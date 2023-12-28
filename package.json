@@ -2,9 +2,10 @@
   "name": "blogbackend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "index.ts",
   "scripts": {
+    "dev": "nodemon index.ts --ignore client",
+    "start": "node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,13 @@
     "express": "^4.18.2",
     "mongoose": "^8.0.3",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.10.5",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }
